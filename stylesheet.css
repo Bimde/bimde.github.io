@@ -1,4 +1,49 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	background-color: #006699;
+}
+
+.header {
+	margin: 0;
+	display: block;
+	background-color: lightgrey;
+	text-align: center;
+	height: 130px;
+	position: absolute;
+	width: 100%;
+}
+
+.menuItem {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0.2% 1%;
+	background-color: #999999;
+	margin: 0 0.5%;
+	font-size: 1.5em;
+	border-radius: 5px;
+}
+
+.nobounds {
+	padding: 0;
+	margin: 0;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.outer {
+	margin-top: 135px;
+	position: relative;
+	left: 50%;
+	max-width: 800px;
+	display: block;
+}
+
+.content {
+	position: relative;
+	left: -50%;
+	display: inline-block;
+	float: left;
 }
