@@ -4,6 +4,20 @@ html, body {
 	background-color: #006699;
 }
 
+* {
+	font-family: Calibri, sans-serif;
+}
+
+.nodecoration {
+	text-decoration: none;
+	color: black;
+}
+
+.header h1 {
+	font-size: 2.5em;
+	margin: 1.1%;
+}
+
 .header {
 	margin: 0;
 	display: block;
@@ -22,6 +36,14 @@ html, body {
 	margin: 0 0.5%;
 	font-size: 1.5em;
 	border-radius: 5px;
+}
+
+.menuItem:hover {
+	background-color: grey;
+}
+
+.menuItem:active {
+	background-color: dimgray;
 }
 
 .nobounds {
