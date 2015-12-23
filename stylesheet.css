@@ -14,7 +14,7 @@ html, body {
 
 .header h1 {
 	font-size: 2.5em;
-	margin: 1.1%;
+	margin: 10px 0;
 }
 
 .header {
@@ -22,8 +22,8 @@ html, body {
 	display: block;
 	background-color: #5f9ea0;
 	text-align: center;
-	height: 130px;
 	position: absolute;
+    height: 120px;
 	width: 100%;
 	vertical-align: middle;
 }
@@ -31,7 +31,7 @@ html, body {
 .menuItem {
 	display: inline-block;
 	list-style-type: none;
-	padding: 0.2% 1%;
+	padding: 2px 1%;
 	margin: 0 0.5%;
 	font-size: 1.5em;
 	vertical-align: middle;
@@ -66,5 +66,5 @@ html, body {
 	position: relative;
 	left: -50%;
 	display: inline-block;
-	float: left;
+    width: 100%;
 }
