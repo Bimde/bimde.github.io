@@ -1,14 +1,13 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: #006699;
 }
 
 * {
-	font-family: Calibri, sans-serif;
+	font-family: "Calibri Light", sans-serif;
 }
 
-.nodecoration {
+.noDecoration {
 	text-decoration: none;
 	color: black;
 }
@@ -21,32 +20,32 @@ html, body {
 .header {
 	margin: 0;
 	display: block;
-	background-color: lightgrey;
+	background-color: #5f9ea0;
 	text-align: center;
 	height: 130px;
 	position: absolute;
 	width: 100%;
+	vertical-align: middle;
 }
 
 .menuItem {
 	display: inline-block;
 	list-style-type: none;
 	padding: 0.2% 1%;
-	background-color: #999999;
 	margin: 0 0.5%;
 	font-size: 1.5em;
-	border-radius: 5px;
+	vertical-align: middle;
 }
 
 .menuItem:hover {
-	background-color: grey;
+	background-color: #568e90;
 }
 
 .menuItem:active {
-	background-color: dimgray;
+	background-color: #4c7d80;
 }
 
-.nobounds {
+.noBounds {
 	padding: 0;
 	margin: 0;
 }
