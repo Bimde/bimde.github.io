@@ -29,6 +29,10 @@ html, body {
 	min-width: 120px;
 }
 
+.selected {
+    font-weight: bolder;
+}
+
 .menuItem {
 	display: inline-block;
 	list-style-type: none;
