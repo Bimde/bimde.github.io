@@ -30,13 +30,13 @@ html, body {
 }
 
 .selected {
-    font-weight: bolder;
+    background-color: #568e90;
 }
 
 .menuItem {
 	display: inline-block;
 	list-style-type: none;
-	padding: 2px 10px;
+	padding: 2px 10px 5px;
 	margin: 0 3px;
 	font-size: 1.5em;
 	vertical-align: middle;
