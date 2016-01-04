@@ -1,3 +1,13 @@
 .project {
     display: block;
 }
+
+.codeLink{
+    display: inline-block;
+    background-color: dimgrey;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
