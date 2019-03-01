@@ -26,3 +26,11 @@
   });
 
 })(jQuery); // End of use strict
+
+var typed = new Typed('#text-animation', {
+  strings: ["Developer.", "Cyclist.", "Tech Enthusiant."],
+  typeSpeed: 80,
+  loop: true,
+  backDelay: 1100,
+  backSpeed: 30
+});
