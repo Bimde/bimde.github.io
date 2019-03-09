@@ -26,7 +26,7 @@ function doStuff() {
 	    alert(data);
             //process the JSON data etc
         }, error: function(xhr, status, error) {
-	    console.log("Error: " + JSON.parse(xhr.responseText).Message);
+	    console.log("Error: " + JSON.parse(xhr.responseText));
 	}
     })
 }
