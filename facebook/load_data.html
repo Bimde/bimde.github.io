@@ -1,0 +1,16 @@
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1076493819208259',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+</script>
+<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+FB.login(function(response) {
+  // handle the response
+}, {scope: 'groups_access_member_info'});
+</script>    
