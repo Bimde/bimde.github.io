@@ -15,6 +15,7 @@ const groupId = '410749922835779';
 var accessToken;
 FB.login(function(response) {
     accessToken = response.authResponse.accessToken;
+    console.log(accessToken);
     loadPosts();
 }, {scope: 'groups_access_member_info'});
 
