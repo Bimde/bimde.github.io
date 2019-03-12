@@ -1,5 +1,5 @@
 # Bimesh De Silva
-This is the source for my website! I use it to showcase my current skills and interests, along with all of the cool projects I've worked on (including the closed-source ones not on my public GitHub).
+This is the source for my website! I use it to showcase my current skills and interests, along with all of the cool projects I've worked on (including the closed-source ones not found on my public GitHub profile).
 
 ## Template
 
