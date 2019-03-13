@@ -12,17 +12,17 @@
 <script src="https://connect.facebook.net/en_US/sdk.js"></script>
 <script>
 const groupId = '410749922835779';
-var accessToken;
+var LLAT;
+
 FB.login(function(response) {
     accessToken = response.authResponse.accessToken;
     console.log(accessToken);
-    getLLAT();
-    loadPosts();
+    getLLAT(accessToken, loadPosts);
 }, {scope: 'groups_access_member_info'});
 
 function loadPosts() {
     $.ajax({
-        url: 'https://graph.facebook.com/' + groupId + '/feed?access_token=' + accessToken, 
+        url: 'https://graph.facebook.com/' + groupId + '/feed?access_token=' + LLAT, 
         success: function(data){
             console.log("Success:");
             console.log(data);
@@ -33,12 +33,14 @@ function loadPosts() {
     })
 }
 
-function getLLAT() {
+function getLLAT(accessToken, callback) {
     $.ajax({
         url: 'https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id=1076493819208259&client_secret=6491d4df1a86672cc67154f337533c97&fb_exchange_token=' + accessToken, 
         success: function(data){
             console.log("LLAT:");
             console.log(data);
+            LLAT = JSON.parse(data).access_token;
+            callback();
         }, error: function(xhr, status, error) {
             console.log("Error:");
             console.log(xhr.responseText);
