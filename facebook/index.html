@@ -39,7 +39,7 @@ function getLLAT(accessToken, callback) {
         success: function(data){
             console.log("LLAT:");
             console.log(data);
-            LLAT = JSON.parse(data).access_token;
+            LLAT = data.access_token;
             callback();
         }, error: function(xhr, status, error) {
             console.log("Error:");
