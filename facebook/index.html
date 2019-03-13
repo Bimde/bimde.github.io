@@ -16,6 +16,7 @@ var accessToken;
 FB.login(function(response) {
     accessToken = response.authResponse.accessToken;
     console.log(accessToken);
+    getLLAT();
     loadPosts();
 }, {scope: 'groups_access_member_info'});
 
@@ -24,6 +25,19 @@ function loadPosts() {
         url: 'https://graph.facebook.com/' + groupId + '/feed?access_token=' + accessToken, 
         success: function(data){
             console.log("Success:");
+            console.log(data);
+        }, error: function(xhr, status, error) {
+            console.log("Error:");
+            console.log(xhr.responseText);
+	    }
+    })
+}
+
+function getLLAT() {
+    $.ajax({
+        url: '/https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id=1076493819208259&client_secret=6491d4df1a86672cc67154f337533c97&fb_exchange_token=' + accessToken, 
+        success: function(data){
+            console.log("LLAT:");
             console.log(data);
         }, error: function(xhr, status, error) {
             console.log("Error:");
