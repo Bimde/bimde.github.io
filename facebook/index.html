@@ -35,7 +35,7 @@ function loadPosts() {
 
 function getLLAT() {
     $.ajax({
-        url: '/https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id=1076493819208259&client_secret=6491d4df1a86672cc67154f337533c97&fb_exchange_token=' + accessToken, 
+        url: 'https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id=1076493819208259&client_secret=6491d4df1a86672cc67154f337533c97&fb_exchange_token=' + accessToken, 
         success: function(data){
             console.log("LLAT:");
             console.log(data);
