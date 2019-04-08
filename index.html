@@ -58,9 +58,6 @@
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
@@ -108,7 +105,7 @@
           <div class="resume-content">
             <h3 class="mb-0">Full Stack Developer Intern</h3>
             <div class="subheading mb-3">SAP</div>
-            <p>Member of core backend team for SAP Commerce Cloud. Worked on API modernization and monolith decomposition. Proposed, owned, and developed new express checkout flow reducing checkout time by 70%. <a target="_blank" href="https://github.com/SAP/cloud-commerce-spartacus-storefront">Check out the open source frontend part here</a>. </p>
+            <p>Member of core backend team for Enterprise Commerce (SAP Commerce Cloud). Worked on API modernization and monolith decomposition. Proposed, owned, and developed new express checkout flow reducing checkout time by 70%.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">January 2019 - Present</span>
@@ -179,50 +176,88 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-java"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-android"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-        </ul>
-
-        <!--<div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul> -->
-      </div>
-    </section>
-
-    <hr class="m-0">
-
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-      <div class="w-100">
-        <h2 class="mb-5">Projects</h2>
-        <p>WIP. For now, checkout my profile on <a target="_blank" href="https://github.com/bimde">GitHub</a></p>
+      <div class="card-columns">
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h4 class="card-title">Fancam Generator</h4>
+              <p class="card-text">Generates videos following people using <a href="https://docs.aws.amazon.com/rekognition/latest/dg/persons.html" target="_blank">People Pathing</a> from AWS Rekognition and the <a href="https://www.openshot.org/cloud-api/" target="_blank">OpenShot Cloud API</a> for video editing. Currently being used to track people in choreographies.</p>        
+              <span class="badge badge-success">go</span>
+              <span class="badge badge-primary">aws-lambda</span>
+              <span class="badge badge-primary">aws-rekognition</span>
+              <span class="badge badge-primary">aws-dynamodb</span>
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/bimde/FancamGenerator" target="_blank" class="card-link">GitHub</a><br/>
+                <a href="https://www.youtube.com/channel/UCbk65m7iJXRcmoVC8NgNkEg" target="_blank" href="#" class="card-link">Generated Videos</a>        
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h4 class="card-title">Blackjack Server</h4>
+              <p class="card-text">Contains both the dealer and server for hosting hundreds of concurrent Blackjack games. Defines a TCP/IP API for communication with clients. </p>        
+              <span class="badge badge-success">java</span>
+              <span class="badge badge-warning">tcp/ip</span>
+              <span class="badge badge-warning">concurrency</span>
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/Bimde/Blackjack-Server" target="_blank" class="card-link">GitHub</a><br/>
+                <a href="https://docs.google.com/document/d/1TitWhC7pa1LwOa1-9aaW1HGAJzgxTehDEKdn49hRspE/" target="_blank" href="#" class="card-link">API Documentation</a>        
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h4 class="card-title">Flow</h4>
+              <p class="card-text">Collabaorative IDE for developers (kind of like Google Docs, but it's an IDE). Supports compiling, syntax highlighting, debugging, file history, and more! Text modification inspired by <a href="https://operational-transformation.github.io/index.html" target="_blank">Operational Transformation</a>. </p>
+              <span class="badge badge-success">java</span>
+              <span class="badge badge-primary">sqlite</span>
+              <span class="badge badge-warning">tcp/ip</span>
+              <span class="badge badge-warning">operational-transformation</span>
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/ecnivo/Flow" target="_blank" class="card-link">GitHub</a><br/>
+                <a href="https://github.com/ecnivo/Flow/blob/master/Documentation-Flow.pdf" target="_blank" href="#" class="card-link">Documentation</a>        
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h4 class="card-title">Dance Dance Revolution</h4>
+              <p class="card-text">Built a DDR board using conductive plates, pull-up resistors and an Arduino. Built a DDR-inspired game using Unity. Linked up the arduino and game using a serial port.</p>
+              <span class="badge badge-success">c#</span>
+              <span class="badge badge-success">c++</span>
+              <span class="badge badge-primary">unity</span>
+              <span class="badge badge-primary">arduino</span>
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/ecnivo/Flow" target="_blank" class="card-link">GitHub</a><br/>
+                <a href="https://github.com/ecnivo/Flow/blob/master/Documentation-Flow.pdf" target="_blank" href="#" class="card-link">Documentation</a>        
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h4 class="card-title">USDA Food Nutrition Visualizer</h4>
+              <p class="card-text">Built prior to the USDA having their own <a href="https://ndb.nal.usda.gov/ndb/" target="_blank">searchable database</a>, I built a Java API that parses through the 100 000+ foods and associated nutrient information available in their database data dumps. Uses a purpose-built balanced binary tree and weighted searching algorithm to return the most relevant results super fast. Cool note: everything used here was built from scratch (searching, balanced binary trees, priority queues, linked lists)!</p>
+              <span class="badge badge-success">java</span>
+              <span class="badge badge-warning">custom-datastructures</span>
+              <span class="badge badge-warning">search</span>
+
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/Bimde/USDA-Food-Nutrition-Application" target="_blank" class="card-link">GitHub</a><br/>  
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

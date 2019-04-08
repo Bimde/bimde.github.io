@@ -28,7 +28,7 @@
 })(jQuery); // End of use strict
 
 var typed = new Typed('#text-animation', {
-  strings: ["Developer.", "Outdoors fanatic.", "Tech enthusiast."],
+  strings: ["Developer.", "Outdoor fanatic.", "Tech enthusiast."],
   typeSpeed: 80,
   loop: true,
   backDelay: 1100,
