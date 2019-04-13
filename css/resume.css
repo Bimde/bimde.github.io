@@ -194,3 +194,7 @@ a:hover, a:focus, a:active {
 .slightly-rounded {
   border-radius: 15.2%;
 }
+
+.right { 
+  float: right;
+}
