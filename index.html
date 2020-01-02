@@ -105,10 +105,18 @@
           <div class="resume-content">
             <h3 class="mb-0">Software Engineering Intern</h3>
             <div class="subheading mb-3">Google</div>
-            <p>Currently building a caching system for real-time ads updates in Google Search. Worked on a Cloud Dataflow pipeline (similar to MapReduce), resulting in 30% more targeted advertisers for our product.</p>
+            <p>My main project focussed on building a caching system for real-time ads updates in Google Search.
+              The first part was building a couple of <a href="https://cloud.google.com/dataflow/">Cloud Dataflow</a> pipelines for all the data that 
+              wasn't change-tracked (Cloud Dataflow is managed, higher-level abstraction of MapReduce concepts).
+              I improved the runtime of these pipelines by over 25% by optimizing the SQL queries 
+              (this involved matching join keys to indeces, combining queries, using native materialization into 
+              <a href="https://developers.google.com/protocol-buffers">protos</a>, and a variety of other techniques).
+              Then, I built a couple of microservices to subscribe to change-tracked data via several 
+              <a href="https://cloud.google.com/pubsub/docs/overview">Pub/Sub</a> queues and update our cache. </p> This improved the 
+              average data freshness in our cache from over 30 minutes to under 1 second.
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2019 - Present</span>
+            <span class="text-primary">September 2019 - December 2019</span>
           </div>
         </div>
 
@@ -169,13 +177,18 @@
           <div class="resume-content">
             <h3 class="mb-0">University of Waterloo</h3>
             <div class="subheading mb-3">Bachelor of Software Engineering</div>
-            <p>Relevant courses:</p>
+            <p>Some relevant courses I've taken so far:</p>
             <ul>
               <li>Programming Principles - <a href="https://cs.uwaterloo.ca//current/courses/course_descriptions/cDescr/CS137">CS 137</a></li>
               <li>Introduction to Data Abstraction and Implementation - <a href="https://cs.uwaterloo.ca//current/courses/course_descriptions/cDescr/CS138">CS 138</a></li>
               <li>Logic and Computation - <a href="https://www.student.cs.uwaterloo.ca/~se212/">SE 212</a></li>
               <li>Digital Computers - <a href="https://uwflow.com/course/ece222">ECE 222</a></li>
               <li>Foundations of Sequential Programs Enriched (a.k.a mini-compilers) - <a href="https://www.student.cs.uwaterloo.ca/~cs241e/">CS 241E</a></li>
+              <li>Data Structures and Data Management - <a href="https://www.student.cs.uwaterloo.ca/~cs240e/">CS 240E</a></li>
+              <li>Software Engineering Principles - <a href="https://www.student.cs.uwaterloo.ca/~cs247/">CS 247</a></li>
+              <li>Algorithms - <a href="https://www.student.cs.uwaterloo.ca/~cs341/">CS 341</a></li>
+              <li>Operating Systems - <a href="https://ece.uwaterloo.ca/~smzahedi/crs/se350/">SE 350</a></li>
+              <li>Applied Probability - <a href="http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-STAT.html#STAT330">STAT 330</a></li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
