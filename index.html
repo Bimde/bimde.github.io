@@ -21,7 +21,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
+  <link href="css/resume.min.css" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135386570-1"></script>
@@ -231,6 +231,22 @@
         <div class="card">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
+              <h4 class="card-title">Idea Stack</h4>
+              <p class="card-text">A Google Assistant Action that saves your thoughts/conversation topics in a stack so you could remember them for later!</p>       
+              <span class="badge badge-success">javascript</span>
+              <span class="badge badge-primary">google-assistant</span>
+              <span class="badge badge-primary">cloud-functions</span>
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/bimde/idea-stack" class="card-link">GitHub</a><br/>
+                <a href="https://assistant.google.com/services/a/uid/0000002926d1b43e" class="card-link">Assistant Action Store</a><br/>
+                <a href="https://www.producthunt.com/posts/idea-stack?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-idea-stack" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=271485&theme=dark" alt="Idea Stack - A stack for your ideas! | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
               <h4 class="card-title">Fancam Generator</h4>
               <p class="card-text">Generates videos following people using <a href="https://docs.aws.amazon.com/rekognition/latest/dg/persons.html">People Pathing</a> from AWS Rekognition and the <a href="https://www.openshot.org/cloud-api/">OpenShot Cloud API</a> for video editing. It's currently being used to track people in choreographies. Resulted in two offshoot projects: an OpenShot SDK for Go and a Go HTTP Client Library.</p>        
               <span class="badge badge-success">go</span>
@@ -254,21 +270,6 @@
         <div class="card">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <h4 class="card-title">Blackjack Server</h4>
-              <p class="card-text">Contains both the dealer and server for hosting hundreds of concurrent Blackjack games. Defines a TCP/IP API for communication with clients. </p>        
-              <span class="badge badge-success">java</span>
-              <span class="badge badge-warning">tcp/ip</span>
-              <span class="badge badge-warning">concurrency</span>
-            </li>
-            <li class="list-group-item">
-                <a href="https://github.com/Bimde/Blackjack-Server" class="card-link">GitHub</a><br/>
-                <a href="https://docs.google.com/document/d/1TitWhC7pa1LwOa1-9aaW1HGAJzgxTehDEKdn49hRspE/" href="#" class="card-link">API Documentation</a>        
-            </li>
-          </ul>
-        </div>
-        <div class="card">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
               <h4 class="card-title">gRPC vs. REST</h4>
               <p class="card-text">An article comparing gRPC to REST, Protocol Buffers to JSON, and HTTP/2 to HTTP/1.1. Contains benchmarks created using Go channels to compare HTTP/2 request multiplexing to HTTP/1.1 pipelining. Used a Job/Worker pattern with a controlled thread pool size to find the optimal amount of concurrent requests.</p>
               <span class="badge badge-warning">grpc</span>
@@ -278,8 +279,23 @@
               <span class="badge badge-success">go</span>
             </li>
             <li class="list-group-item">
-                <a href=https://github.com/Bimde/grpc-vs-rest" class="card-link">GitHub</a><br/>
-                <a href="https://medium.com/@bimeshde/grpc-vs-rest-performance-simplified-fd35d01bbd4" class="card-link">Medium Article</a><br/>
+                <a href="https://github.com/Bimde/grpc-vs-rest" class="card-link">GitHub</a><br/>
+                <a href="https://medium.com/@bimeshde/grpc-vs-rest-performance-simplified-fd35d01bbd4" class="card-link">Medium Article (1K+ claps!)</a><br/>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h4 class="card-title">USDA Food Nutrition Visualizer</h4>
+              <p class="card-text">Built prior to the USDA having their <a href="https://ndb.nal.usda.gov/ndb/">own searchable database</a>, this Java API parses through the 100 000+ foods and associated nutrient information available in their database data dumps. Uses a purpose-built balanced binary tree and weighted searching algorithm to return the most relevant results super fast. Fun fact: everything used here was built from scratch (searching, balanced binary trees, priority queues, linked lists)!</p>
+              <span class="badge badge-success">java</span>
+              <span class="badge badge-warning">custom-datastructures</span>
+              <span class="badge badge-warning">search</span>
+
+            </li>
+            <li class="list-group-item">
+                <a href="https://github.com/Bimde/USDA-Food-Nutrition-Application" class="card-link">GitHub</a><br/>  
             </li>
           </ul>
         </div>
@@ -299,7 +315,6 @@
             </li>
           </ul>
         </div>
-
         <div class="card">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
@@ -315,19 +330,18 @@
             </li>
           </ul>
         </div>
-
         <div class="card">
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <h4 class="card-title">USDA Food Nutrition Visualizer</h4>
-              <p class="card-text">Built prior to the USDA having their <a href="https://ndb.nal.usda.gov/ndb/">own searchable database</a>, this Java API parses through the 100 000+ foods and associated nutrient information available in their database data dumps. Uses a purpose-built balanced binary tree and weighted searching algorithm to return the most relevant results super fast. Fun fact: everything used here was built from scratch (searching, balanced binary trees, priority queues, linked lists)!</p>
+              <h4 class="card-title">Blackjack Server</h4>
+              <p class="card-text">Contains both the dealer and server for hosting hundreds of concurrent Blackjack games. Defines a TCP/IP API for communication with clients. </p>        
               <span class="badge badge-success">java</span>
-              <span class="badge badge-warning">custom-datastructures</span>
-              <span class="badge badge-warning">search</span>
-
+              <span class="badge badge-warning">tcp/ip</span>
+              <span class="badge badge-warning">concurrency</span>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/Bimde/USDA-Food-Nutrition-Application" class="card-link">GitHub</a><br/>  
+                <a href="https://github.com/Bimde/Blackjack-Server" class="card-link">GitHub</a><br/>
+                <a href="https://docs.google.com/document/d/1TitWhC7pa1LwOa1-9aaW1HGAJzgxTehDEKdn49hRspE/" href="#" class="card-link">API Documentation</a>        
             </li>
           </ul>
         </div>

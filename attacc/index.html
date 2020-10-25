@@ -1,0 +1,22 @@
+<script>
+  function increment() {
+    var request = new XMLHttpRequest()
+    request.open('PUT', 'https://shielded-earth-02834.herokuapp.com/counters/bimesh', true)
+    getCounter()
+  }
+
+  function getCounter() {
+    var request = new XMLHttpRequest()
+    request.open('GET', 'https://shielded-earth-02834.herokuapp.com/counters/bimesh', true)
+    request.onload = function() {
+        alert('error');
+      var data = JSON.parse(this.response)
+      if (request.status >= 200 && request.status < 400) {
+        console.log(data);
+      } else {
+        alert('error');
+      }
+    }
+  }
+</script>
+<div><div style="margin: 3%;">Counter<div id="heyo">0</div><div><button onclick="increment()">+</button></div></div></div>
