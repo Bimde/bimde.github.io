@@ -27,7 +27,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135386570-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-135386570-1');
   </script>
@@ -43,7 +43,8 @@
         <img class="img-fluid img-profile slightly-rounded mx-auto mb-2" src="img/bimesh.png" alt="">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -106,14 +107,20 @@
             <h3 class="mb-0">Software Engineering Intern</h3>
             <div class="subheading mb-3">Facebook Reality Labs (AR/VR)</div>
             <p>
-              I primarily spent my time working on the USB stack of a new operating system. I built the first standalone USB
-              class driver for the OS. This required building the foundations in our xHCI driver and adding IPC APIs for the
-              class drivers to use. My driver enabled Serial over USB, which allowed application developers to attach debuggers
-              to their boards without taking up the physical serial port (which was required for other purposes, e.g. kernel logs
-              and control). My driver also served as a reference for a functioning standalone USB driver, which my teammates
+              I primarily spent my time working on the USB stack of a new operating system. I built the first standalone
+              USB
+              class driver for the OS. This required building the foundations in our xHCI driver and adding IPC APIs for
+              the
+              class drivers to use. My driver enabled Serial over USB, which allowed application developers to attach
+              debuggers
+              to their boards without taking up the physical serial port (which was required for other purposes, e.g.
+              kernel logs
+              and control). My driver also served as a reference for a functioning standalone USB driver, which my
+              teammates
               have been using as an example to build other drivers based on.
-              <br/><br/>
-              I also took a computer vision course, where I learned about computer vision/deep learning basics and completed a
+              <br /><br />
+              I also took a computer vision course, where I learned about computer vision/deep learning basics and
+              completed a
               couple of assignments using PyTorch.
             </p>
           </div>
@@ -127,14 +134,18 @@
             <h3 class="mb-0">Software Engineering Intern</h3>
             <div class="subheading mb-3">Google</div>
             <p>My main project focussed on building a cache for real-time ads updates in Google Search.
-              The first part involved building a couple of <a href="https://cloud.google.com/dataflow/">Cloud Dataflow</a> pipelines for all the data that 
-              wasn't change-tracked (think of Cloud Dataflow as a managed, higher-level abstraction of MapReduce concepts).
-              I improved the runtime of these pipelines by over 25% by optimizing the SQL queries 
-              (this involved matching join keys to indeces, combining queries, using native materialization into 
+              The first part involved building a couple of <a href="https://cloud.google.com/dataflow/">Cloud
+                Dataflow</a> pipelines for all the data that
+              wasn't change-tracked (think of Cloud Dataflow as a managed, higher-level abstraction of MapReduce
+              concepts).
+              I improved the runtime of these pipelines by over 25% by optimizing the SQL queries
+              (this involved matching join keys to indeces, combining queries, using native materialization into
               <a href="https://developers.google.com/protocol-buffers">protos</a> and a variety of other techniques).
-              Then, I built a couple of microservices to update our cache by subscribing to change-tracked data via several 
-              <a href="https://cloud.google.com/pubsub/docs/overview">Pub/Sub</a> queues. This improved the 
-              average data freshness in our cache from over 30 minutes to under 1 second.</p> 
+              Then, I built a couple of microservices to update our cache by subscribing to change-tracked data via
+              several
+              <a href="https://cloud.google.com/pubsub/docs/overview">Pub/Sub</a> queues. This improved the
+              average data freshness in our cache from over 30 minutes to under 1 second.
+            </p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">September 2019 - December 2019</span>
@@ -145,7 +156,9 @@
           <div class="resume-content">
             <h3 class="mb-0">Full Stack Developer Intern</h3>
             <div class="subheading mb-3">SAP</div>
-            <p>Member of core backend team for Enterprise Commerce (SAP Commerce Cloud). Worked on API modernization and monolith decomposition. Proposed, owned, and developed a new express checkout flow reducing checkout time by 70%.</p>
+            <p>Member of core backend team for Enterprise Commerce (SAP Commerce Cloud). Worked on API modernization and
+              monolith decomposition. Proposed, owned, and developed a new express checkout flow reducing checkout time
+              by 70%.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">January 2019 - April 2019</span>
@@ -156,7 +169,9 @@
           <div class="resume-content">
             <h3 class="mb-0">Software Engineering Intern - Backend</h3>
             <div class="subheading mb-3">BlackBerry Messenger</div>
-            <p>Worked on partner team building third-party integrations into the app. Developed an advertisement pushing service reaching 10 million daily users. Built an automated contest generation platform for partners. Since launch, their contests have had over 200 thousand participants.</p>
+            <p>Worked on partner team building third-party integrations into the app. Developed an advertisement pushing
+              service reaching 10 million daily users. Built an automated contest generation platform for partners.
+              Since launch, their contests have had over 200 thousand participants.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">May 2018 - August 2018</span>
@@ -167,7 +182,10 @@
           <div class="resume-content">
             <h3 class="mb-0">Lead Android Engineer</h3>
             <div class="subheading mb-3">Tasteport</div>
-            <p>Founding member of a startup enabling small grocery businesses to take part in the digital grocery revolution. Built an <a href="https://play.google.com/store/apps/details?id=com.tasteport">Android app</a> for customer and investor demos in 4 weeks, resulting in $30 000 of investment and 2 stores signing on. <a href="https://www.tasteport.com/">Check out our website here!</a></p>
+            <p>Founding member of a startup enabling small grocery businesses to take part in the digital grocery
+              revolution. Built an <a href="https://play.google.com/store/apps/details?id=com.tasteport">Android app</a>
+              for customer and investor demos in 4 weeks, resulting in $30 000 of investment and 2 stores signing on. <a
+                href="https://www.tasteport.com/">Check out our website here!</a></p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2017 - April 2018</span>
@@ -178,7 +196,9 @@
           <div class="resume-content">
             <h3 class="mb-0">Software Developer Co-op - Frontend</h3>
             <div class="subheading mb-3">The Regional Municipality of York</div>
-            <p>Worked on the team developing the <a href="https://www.york.ca">york.ca</a> website. Created an employee forum using WebSphere APIs for authentication and data storage. Built several web widgets using third-party APIs for a portal used by over 2000 employees.</p>
+            <p>Worked on the team developing the <a href="https://www.york.ca">york.ca</a> website. Created an employee
+              forum using WebSphere APIs for authentication and data storage. Built several web widgets using
+              third-party APIs for a portal used by over 2000 employees.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">September 2015 - January 2016</span>
@@ -198,26 +218,42 @@
           <div class="resume-content">
             <h3 class="mb-0">University of Waterloo</h3>
             <div class="subheading mb-3">Bachelor of Software Engineering</div>
-            <p>Some relevant courses I've taken so far:</p>
+            <p>Relevant courses:</p>
             <ul>
-              <li>Programming Principles - <a href="https://cs.uwaterloo.ca//current/courses/course_descriptions/cDescr/CS137">CS 137</a></li>
-              <li>Introduction to Data Abstraction and Implementation - <a href="https://cs.uwaterloo.ca//current/courses/course_descriptions/cDescr/CS138">CS 138</a></li>
+              <li>Programming Principles - <a
+                  href="https://cs.uwaterloo.ca//current/courses/course_descriptions/cDescr/CS137">CS 137</a></li>
+              <li>Introduction to Data Abstraction and Implementation - <a
+                  href="https://cs.uwaterloo.ca//current/courses/course_descriptions/cDescr/CS138">CS 138</a></li>
               <li>Logic and Computation - <a href="https://www.student.cs.uwaterloo.ca/~se212/">SE 212</a></li>
               <li>Digital Computers - <a href="https://uwflow.com/course/ece222">ECE 222</a></li>
-              <li>Foundations of Sequential Programs (a.k.a mini-compilers) - <a href="https://www.student.cs.uwaterloo.ca/~cs241e/">CS 241E</a></li>
-              <li>Data Structures and Data Management - <a href="https://www.student.cs.uwaterloo.ca/~cs240e/">CS 240E</a></li>
-              <li>Software Engineering Principles - <a href="https://www.student.cs.uwaterloo.ca/~cs247/">CS 247</a></li>
+              <li>Foundations of Sequential Programs (a.k.a mini-compilers) - <a
+                  href="https://www.student.cs.uwaterloo.ca/~cs241e/">CS 241E</a></li>
+              <li>Data Structures and Data Management - <a href="https://www.student.cs.uwaterloo.ca/~cs240e/">CS
+                  240E</a></li>
+              <li>Software Engineering Principles - <a href="https://www.student.cs.uwaterloo.ca/~cs247/">CS 247</a>
+              </li>
               <li>Algorithms - <a href="https://www.student.cs.uwaterloo.ca/~cs341/">CS 341</a></li>
               <li>Operating Systems - <a href="https://ece.uwaterloo.ca/~smzahedi/crs/se350/">SE 350</a></li>
-              <li>Applied Probability - <a href="http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-STAT.html#STAT330">STAT 330</a></li>
+              <li>Applied Probability - <a
+                  href="http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-STAT.html#STAT330">STAT 330</a></li>
               <li>Software Design - <a href="https://ece.uwaterloo.ca/~wdietl/teaching/2020f/se464/">SE 464</a></li>
-              <li>Feedback Control - <a href="http://www.ucalendar.uwaterloo.ca/2021/COURSE/course-SE.html#SE380">SE 380</a></li>
-              <li>Databases - <a href="http://www.ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS348">CS 348</a></li>
-              <li>Concurrency - <a href="http://www.ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS343">CS 343</a></li>
+              <li>Feedback Control - <a href="http://www.ucalendar.uwaterloo.ca/2021/COURSE/course-SE.html#SE380">SE
+                  380</a></li>
+              <li>Databases - <a href="http://www.ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS348">CS 348</a>
+              </li>
+              <li>Concurrency - <a href="http://www.ucalendar.uwaterloo.ca/2021/COURSE/course-CS.html#CS343">CS 343</a>
+              </li>
               <li>Artificial Intelligence - <a href="https://cs.uwaterloo.ca/~jhoey/teaching/cs486/">CS 486</a></li>
               <li>Computer Security and Privacy - <a href="https://crysp.uwaterloo.ca/courses/cs458">CS 458</a></li>
-              <li>Computer Networks - <a href="https://uwaterloo.ca/electrical-computer-engineering/sites/ca.electrical-computer-engineering/files/uploads/files/ece_358_1211.pdf">ECE 358</a></li>
-              <li>Distributed Computing - <a href="https://uwaterloo.ca/electrical-computer-engineering/sites/ca.electrical-computer-engineering/files/uploads/files/ece_454_1215.pdf">ECE 454</a></li>
+              <li>Computer Networks - <a
+                  href="https://uwaterloo.ca/electrical-computer-engineering/sites/ca.electrical-computer-engineering/files/uploads/files/ece_358_1211.pdf">ECE
+                  358</a></li>
+              <li>Distributed Computing - <a
+                  href="https://uwaterloo.ca/electrical-computer-engineering/sites/ca.electrical-computer-engineering/files/uploads/files/ece_454_1215.pdf">ECE
+                  454</a></li>
+              <li>Quantum Information Processing - <a
+                  href="https://cs.uwaterloo.ca//current/courses/course_descriptions/cDescr/CS467">CS 467</a></li>
+              <li>Machine Learning - <a href="https://cs.uwaterloo.ca/~y328yu/mycourses/480/index.html">CS 480</a></li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -235,15 +271,21 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4 class="card-title">Idea Stack</h4>
-              <p class="card-text">A Google Assistant Action that saves your thoughts/conversation topics in a stack so you could remember them for later!</p>       
+              <p class="card-text">A Google Assistant Action that saves your thoughts/conversation topics in a stack so
+                you could remember them for later!</p>
               <span class="badge badge-success">javascript</span>
               <span class="badge badge-primary">google-assistant</span>
               <span class="badge badge-primary">cloud-functions</span>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/bimde/idea-stack" class="card-link">GitHub</a><br/>
-                <a href="https://assistant.google.com/services/a/uid/0000002926d1b43e" class="card-link">Assistant Action Store</a><br/>
-                <a href="https://www.producthunt.com/posts/idea-stack?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-idea-stack" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=271485&theme=dark" alt="Idea Stack - A stack for your ideas! | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+              <a href="https://github.com/bimde/idea-stack" class="card-link">GitHub</a><br />
+              <a href="https://assistant.google.com/services/a/uid/0000002926d1b43e" class="card-link">Assistant Action
+                Store</a><br />
+              <a href="https://www.producthunt.com/posts/idea-stack?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-idea-stack"
+                target="_blank"><img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=271485&theme=dark"
+                  alt="Idea Stack - A stack for your ideas! | Product Hunt" style="width: 250px; height: 54px;"
+                  width="250" height="54" /></a>
             </li>
           </ul>
         </div>
@@ -251,22 +293,27 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4 class="card-title">Fancam Generator</h4>
-              <p class="card-text">Generates videos following people using <a href="https://docs.aws.amazon.com/rekognition/latest/dg/persons.html">People Pathing</a> from AWS Rekognition and the <a href="https://www.openshot.org/cloud-api/">OpenShot Cloud API</a> for video editing. It's currently being used to track people in choreographies. Resulted in two offshoot projects: an OpenShot SDK for Go and a Go HTTP Client Library.</p>        
+              <p class="card-text">Generates videos following people using <a
+                  href="https://docs.aws.amazon.com/rekognition/latest/dg/persons.html">People Pathing</a> from AWS
+                Rekognition and the <a href="https://www.openshot.org/cloud-api/">OpenShot Cloud API</a> for video
+                editing. It's currently being used to track people in choreographies. Resulted in two offshoot projects:
+                an OpenShot SDK for Go and a Go HTTP Client Library.</p>
               <span class="badge badge-success">go</span>
               <span class="badge badge-primary">aws-lambda</span>
               <span class="badge badge-primary">aws-rekognition</span>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/bimde/fancam-generator" class="card-link">GitHub</a><br/>
-                <a href="https://www.youtube.com/channel/UCbk65m7iJXRcmoVC8NgNkEg" class="card-link">Generated Videos</a><br/>
-                <a href="https://github.com/bimde/openshot-sdk-go" class="card-link">OpenShot SDK</a>
-                <a href="https://godoc.org/github.com/Bimde/openshot-sdk-go" class="card-link right">
-                  <img src="https://godoc.org/github.com/Bimde/openshot-sdk-go?status.svg" alt="GoDoc">
-                </a><br/>
-                <a href="https://github.com/bimde/httputils" class="card-link">HTTP Client Library</a>
-                <a href="https://godoc.org/github.com/Bimde/httputils" class="card-link right">
-                  <img src="https://godoc.org/github.com/Bimde/httputils?status.svg" alt="GoDoc">
-                </a><br/>
+              <a href="https://github.com/bimde/fancam-generator" class="card-link">GitHub</a><br />
+              <a href="https://www.youtube.com/channel/UCbk65m7iJXRcmoVC8NgNkEg" class="card-link">Generated
+                Videos</a><br />
+              <a href="https://github.com/bimde/openshot-sdk-go" class="card-link">OpenShot SDK</a>
+              <a href="https://godoc.org/github.com/Bimde/openshot-sdk-go" class="card-link right">
+                <img src="https://godoc.org/github.com/Bimde/openshot-sdk-go?status.svg" alt="GoDoc">
+              </a><br />
+              <a href="https://github.com/bimde/httputils" class="card-link">HTTP Client Library</a>
+              <a href="https://godoc.org/github.com/Bimde/httputils" class="card-link right">
+                <img src="https://godoc.org/github.com/Bimde/httputils?status.svg" alt="GoDoc">
+              </a><br />
             </li>
           </ul>
         </div>
@@ -274,16 +321,20 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4 class="card-title">gRPC vs. REST</h4>
-              <p class="card-text">An article comparing gRPC to REST, Protocol Buffers to JSON, and HTTP/2 to HTTP/1.1. Contains benchmarks created using Go channels to compare HTTP/2 request multiplexing to HTTP/1.1 pipelining. Used a Job/Worker pattern with a controlled thread pool size to find the optimal amount of concurrent requests.</p>
+              <p class="card-text">An article comparing gRPC to REST, Protocol Buffers to JSON, and HTTP/2 to HTTP/1.1.
+                Contains benchmarks created using Go channels to compare HTTP/2 request multiplexing to HTTP/1.1
+                pipelining. Used a Job/Worker pattern with a controlled thread pool size to find the optimal amount of
+                concurrent requests.</p>
               <span class="badge badge-warning">grpc</span>
               <span class="badge badge-warning">rest</span>
               <span class="badge badge-warning">networking</span>
-              <span class="badge badge-warning">concurrency</span>        
+              <span class="badge badge-warning">concurrency</span>
               <span class="badge badge-success">go</span>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/Bimde/grpc-vs-rest" class="card-link">GitHub</a><br/>
-                <a href="https://medium.com/@bimeshde/grpc-vs-rest-performance-simplified-fd35d01bbd4" class="card-link">Medium Article (1K+ claps!)</a><br/>
+              <a href="https://github.com/Bimde/grpc-vs-rest" class="card-link">GitHub</a><br />
+              <a href="https://medium.com/@bimeshde/grpc-vs-rest-performance-simplified-fd35d01bbd4"
+                class="card-link">Medium Article (1K+ claps!)</a><br />
             </li>
           </ul>
         </div>
@@ -291,14 +342,18 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4 class="card-title">USDA Food Nutrition Visualizer</h4>
-              <p class="card-text">Built prior to the USDA having their <a href="https://ndb.nal.usda.gov/ndb/">own searchable database</a>, this Java API parses through the 100 000+ foods and associated nutrient information available in their database data dumps. Uses a purpose-built balanced binary tree and weighted searching algorithm to return the most relevant results super fast. Fun fact: everything used here was built from scratch (searching, balanced binary trees, priority queues, linked lists)!</p>
+              <p class="card-text">Built prior to the USDA having their <a href="https://ndb.nal.usda.gov/ndb/">own
+                  searchable database</a>, this Java API parses through the 100 000+ foods and associated nutrient
+                information available in their database data dumps. Uses a purpose-built balanced binary tree and
+                weighted searching algorithm to return the most relevant results super fast. Fun fact: everything used
+                here was built from scratch (searching, balanced binary trees, priority queues, linked lists)!</p>
               <span class="badge badge-success">java</span>
               <span class="badge badge-warning">custom-datastructures</span>
               <span class="badge badge-warning">search</span>
 
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/Bimde/USDA-Food-Nutrition-Application" class="card-link">GitHub</a><br/>  
+              <a href="https://github.com/Bimde/USDA-Food-Nutrition-Application" class="card-link">GitHub</a><br />
             </li>
           </ul>
         </div>
@@ -306,15 +361,19 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4 class="card-title">Flow</h4>
-              <p class="card-text">Collabaorative IDE for developers (similar idea to Google Docs, but it's an IDE). Supports compiling, syntax highlighting, debugging, file history, and more! Text modification inspired by <a href="https://operational-transformation.github.io/index.html">Operational Transformation</a>. </p>
+              <p class="card-text">Collabaorative IDE for developers (similar idea to Google Docs, but it's an IDE).
+                Supports compiling, syntax highlighting, debugging, file history, and more! Text modification inspired
+                by <a href="https://operational-transformation.github.io/index.html">Operational Transformation</a>.
+              </p>
               <span class="badge badge-success">java</span>
               <span class="badge badge-primary">sqlite</span>
               <span class="badge badge-warning">tcp/ip</span>
               <span class="badge badge-warning">operational-transformation</span>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/ecnivo/Flow" class="card-link">GitHub</a><br/>
-                <a href="https://github.com/ecnivo/Flow/blob/master/Documentation-Flow.pdf" href="#" class="card-link">Documentation</a>        
+              <a href="https://github.com/ecnivo/Flow" class="card-link">GitHub</a><br />
+              <a href="https://github.com/ecnivo/Flow/blob/master/Documentation-Flow.pdf" href="#"
+                class="card-link">Documentation</a>
             </li>
           </ul>
         </div>
@@ -322,14 +381,15 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4 class="card-title">Dance Dance Revolution</h4>
-              <p class="card-text">Combines a DDR board built using conductive plates, pull-up resistors and an Arduino with a DDR-inspired game built using Unity. Linked up the arduino and game using a serial port.</p>
+              <p class="card-text">Combines a DDR board built using conductive plates, pull-up resistors and an Arduino
+                with a DDR-inspired game built using Unity. Linked up the arduino and game using a serial port.</p>
               <span class="badge badge-success">c#</span>
               <span class="badge badge-success">c++</span>
               <span class="badge badge-primary">unity</span>
               <span class="badge badge-primary">arduino</span>
             </li>
             <li class="list-group-item">
-              <a href="https://github.com/yingninggui/Dance-Dance-Revolution" class="card-link">GitHub</a><br/>
+              <a href="https://github.com/yingninggui/Dance-Dance-Revolution" class="card-link">GitHub</a><br />
             </li>
           </ul>
         </div>
@@ -337,14 +397,16 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4 class="card-title">Blackjack Server</h4>
-              <p class="card-text">Contains both the dealer and server for hosting hundreds of concurrent Blackjack games. Defines a TCP/IP API for communication with clients. </p>        
+              <p class="card-text">Contains both the dealer and server for hosting hundreds of concurrent Blackjack
+                games. Defines a TCP/IP API for communication with clients. </p>
               <span class="badge badge-success">java</span>
               <span class="badge badge-warning">tcp/ip</span>
               <span class="badge badge-warning">concurrency</span>
             </li>
             <li class="list-group-item">
-                <a href="https://github.com/Bimde/Blackjack-Server" class="card-link">GitHub</a><br/>
-                <a href="https://docs.google.com/document/d/1TitWhC7pa1LwOa1-9aaW1HGAJzgxTehDEKdn49hRspE/" href="#" class="card-link">API Documentation</a>        
+              <a href="https://github.com/Bimde/Blackjack-Server" class="card-link">GitHub</a><br />
+              <a href="https://docs.google.com/document/d/1TitWhC7pa1LwOa1-9aaW1HGAJzgxTehDEKdn49hRspE/" href="#"
+                class="card-link">API Documentation</a>
             </li>
           </ul>
         </div>
@@ -356,8 +418,15 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Aside from being a developer, I spend most of my time on my feet. During the warmer months, I enjoy mountain biking, camping, canoeing, playing soccer and just appreciating the outdoors. When it gets colder, I love to go snowboarding, hiking, and enjoy the snow in all ways possible. I've also recently found lots of fun in skating and cross country skiing. </p>
-        <p class="mb-0">Year-round, I spend (too much) time in the gym and kitchen since I'm trying to reach some personal fitness goals. I also spend many of my nights reading about whatever seems interesting. Some particular topics that I've read a lot about are karting, investing, productivity, and software development. I've recently started maintaining a list of books I've read on <a href="https://www.goodreads.com/bimesh">goodreads</a>.</p>
+        <p>Aside from being a developer, I spend most of my time on my feet. During the warmer months, I enjoy mountain
+          biking, camping, canoeing, playing soccer and just appreciating the outdoors. When it gets colder, I love to
+          go snowboarding, hiking, and enjoy the snow in all ways possible. I've also recently found lots of fun in
+          skating and cross country skiing. </p>
+        <p class="mb-0">Year-round, I spend (too much) time in the gym and kitchen since I'm trying to reach some
+          personal fitness goals. I also spend many of my nights reading about whatever seems interesting. Some
+          particular topics that I've read a lot about are karting, investing, productivity, and software development.
+          I've recently started maintaining a list of books I've read on <a
+            href="https://www.goodreads.com/bimesh">goodreads</a>.</p>
       </div>
     </section>
 
