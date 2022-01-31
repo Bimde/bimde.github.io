@@ -75,7 +75,7 @@
         <h1 class="mb-0">Bimesh
           <span class="text-primary">De Silva</span>
         </h1>
-        <div class="subheading mb-3"> (650) 772-1920 ·
+        <div class="subheading mb-3">
           <a href="mailto:bimeshde@gmail.com">bimeshde@gmail.com</a>
         </div>
         <p class="lead mb-4"><span id="text-animation"></span></p>
@@ -105,27 +105,73 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Software Engineering Intern</h3>
-            <div class="subheading mb-3">Facebook Reality Labs (AR/VR)</div>
+            <div class="subheading mb-3">Jane Street</div>
             <p>
-              I primarily spent my time working on the USB stack of a new operating system. I built the first standalone
-              USB
-              class driver for the OS. This required building the foundations in our xHCI driver and adding IPC APIs for
-              the
-              class drivers to use. My driver enabled Serial over USB, which allowed application developers to attach
-              debuggers
-              to their boards without taking up the physical serial port (which was required for other purposes, e.g.
-              kernel logs
-              and control). My driver also served as a reference for a functioning standalone USB driver, which my
-              teammates
-              have been using as an example to build other drivers based on.
+              This internship was broken into two halves. <br /><br />
+
+              For the first half, I worked with the domestic ETFs team, improving the performance of some
+              heavily used tools. This involved re-architecting one tool from a pull-based approach to a service which
+              kept it's data fresh and pushed updates to clients. This approach, in combination with some
+              caching, improved performance by over 50% for typical use cases.
               <br /><br />
-              I also took a computer vision course, where I learned about computer vision/deep learning basics and
-              completed a
-              couple of assignments using PyTorch.
+              During the second half, I worked on one of the systems powering options trading. My
+              project dramtically improved the latency of specific order types by enabling us to
+              prioritize/differentiate between them.
             </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">May 2020 - August 2020</span>
+            <span class="text-primary">September - December 2021</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Software Engineering Intern</h3>
+            <div class="subheading mb-3">Nuro</div>
+            <p>
+              My initial project improved Nuro's machine learning pipelines by moving image building (i.e.
+              building docker images for each stages of the pipeline, such as data cleaning or TensorRT) from dev
+              machines onto remote workers. This project improved performance by both leveraging a shared cache for
+              everyone's builds and distributing the work across multiple remote machines. This was built on top of
+              Apache Airflow.
+              <br /><br />
+
+              My next project involved improving the latency of one of Nuro's range-image-based models to enable them
+              to
+              run this model onboard the bots as part of a latecy-sensitive step. To accomplish this, I used
+              quantization aware training, taking advantage of <a
+                href="https://www.tensorflow.org/model_optimization/guide/quantization/training">TF2's QAT tools</a>.
+              I
+              designed and ran several experiments to select the best latency/training time/accuracy tradeoff for our
+              use case.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January - April 2021</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Software Engineering Intern</h3>
+            <div class="subheading mb-3">Facebook Reality Labs (AR/VR)</div>
+            <p>
+              I primarily spent my time working on the USB stack of a new operating system. I built it's first
+              standalone USB class driver. This required building the foundations in our xHCI driver and adding IPC
+              APIs
+              for the class drivers to use. My driver enabled Serial over USB, which allowed application developers to
+              attach debuggers to their boards without taking up the physical serial port (which was required for
+              other
+              purposes, e.g. kernel logs and control). My driver also served as a reference for a functioning
+              standalone
+              USB driver, which my teammates have been using as an example to build other drivers based on.
+              <br /><br />
+              I also took a computer vision course, where I learned about computer vision/deep learning basics and
+              completed a couple of assignments using PyTorch.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May - August 2020</span>
           </div>
         </div>
 
@@ -148,7 +194,7 @@
             </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2019 - December 2019</span>
+            <span class="text-primary">September - December 2019</span>
           </div>
         </div>
 
@@ -156,12 +202,14 @@
           <div class="resume-content">
             <h3 class="mb-0">Full Stack Developer Intern</h3>
             <div class="subheading mb-3">SAP</div>
-            <p>Member of core backend team for Enterprise Commerce (SAP Commerce Cloud). Worked on API modernization and
-              monolith decomposition. Proposed, owned, and developed a new express checkout flow reducing checkout time
+            <p>Member of core backend team for Enterprise Commerce (SAP Commerce Cloud). Worked on API modernization
+              and
+              monolith decomposition. Proposed, owned, and developed a new express checkout flow reducing checkout
+              time
               by 70%.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">January 2019 - April 2019</span>
+            <span class="text-primary">January - April 2019</span>
           </div>
         </div>
 
@@ -169,12 +217,13 @@
           <div class="resume-content">
             <h3 class="mb-0">Software Engineering Intern - Backend</h3>
             <div class="subheading mb-3">BlackBerry Messenger</div>
-            <p>Worked on partner team building third-party integrations into the app. Developed an advertisement pushing
+            <p>Worked on partner team building third-party integrations into the app. Developed an advertisement
+              pushing
               service reaching 10 million daily users. Built an automated contest generation platform for partners.
               Since launch, their contests have had over 200 thousand participants.</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">May 2018 - August 2018</span>
+            <span class="text-primary">May - August 2018</span>
           </div>
         </div>
 
@@ -183,9 +232,11 @@
             <h3 class="mb-0">Lead Android Engineer</h3>
             <div class="subheading mb-3">Tasteport</div>
             <p>Founding member of a startup enabling small grocery businesses to take part in the digital grocery
-              revolution. Built an <a href="https://play.google.com/store/apps/details?id=com.tasteport">Android app</a>
-              for customer and investor demos in 4 weeks, resulting in $30 000 of investment and 2 stores signing on. <a
-                href="https://www.tasteport.com/">Check out our website here!</a></p>
+              revolution. Built an <a href="https://play.google.com/store/apps/details?id=com.tasteport">Android
+                app</a>
+              for customer and investor demos in 4 weeks, resulting in $30 000 of investment and 2 stores signing on.
+              <a href="https://www.tasteport.com/">Check out our website here!</a>
+            </p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">August 2017 - April 2018</span>
@@ -196,7 +247,8 @@
           <div class="resume-content">
             <h3 class="mb-0">Software Developer Co-op - Frontend</h3>
             <div class="subheading mb-3">The Regional Municipality of York</div>
-            <p>Worked on the team developing the <a href="https://www.york.ca">york.ca</a> website. Created an employee
+            <p>Worked on the team developing the <a href="https://www.york.ca">york.ca</a> website. Created an
+              employee
               forum using WebSphere APIs for authentication and data storage. Built several web widgets using
               third-party APIs for a portal used by over 2000 employees.</p>
           </div>
@@ -418,14 +470,21 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Aside from being a developer, I spend most of my time on my feet. During the warmer months, I enjoy mountain
+        <p>Aside from being a developer, I spend most of my time outside. During the warmer months, I enjoy mountain
           biking, camping, canoeing, playing soccer and just appreciating the outdoors. When it gets colder, I love to
-          go snowboarding, hiking, and enjoy the snow in all ways possible. I've also recently found lots of fun in
-          skating and cross country skiing. </p>
-        <p class="mb-0">Year-round, I spend (too much) time in the gym and kitchen since I'm trying to reach some
-          personal fitness goals. I also spend many of my nights reading about whatever seems interesting. Some
-          particular topics that I've read a lot about are karting, investing, productivity, and software development.
-          I've recently started maintaining a list of books I've read on <a
+          go snowboarding, hiking, and enjoy the snow in all ways possible. I also really love driving (especially on
+          (very) long road trips) and I'm always looking for new friends to go on adventures with! </p>
+        <p class="mb-3">I spend a significant amount of time thinking about my career and the impact I want to have on
+          the world. Some topics of interest to me are AR/VR and education. I believe AR glasses (or some form of a
+          semi-permanent display in our vision) are the future of consumer technology and plan to be a part of
+          that revolution at some point. I also believe that a good education (e.g. passionate teachers, access to extra
+          curricular activities) is (one of) the most important things in life. I'm forever grateful for the wonderful
+          education I recieved growing up (thanks parents (and Canada)). I hope to make this experience more accesible
+          for everyone in the future. </p>
+        <p>I also spend many of my nights reading about whatever seems
+          interesting. Some particular topics that I've read a lot about are karting, investing, productivity, and
+          software development.
+          I (occasionally) maintain a list of books I've read on <a
             href="https://www.goodreads.com/bimesh">goodreads</a>.</p>
       </div>
     </section>
